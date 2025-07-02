@@ -1,0 +1,93 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avengers Fan Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="Images/Avengers-Logo-2015.png" alt="Avengers-Logo" width="100" />
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#characters">Characters</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+
+  <section id="home">
+    <h1>Welcome to the Ultimate Avengers Fan Site</h1>
+    <p>Welcome to the Ultimate Avengers Fan Site! This is your HQ for everything Avengers. Whether you're a lifelong fan or a newcomer, you'll find a treasure trove of character bios, unforgettable movie moments, and epic battles. Explore the stories of Earth’s Mightiest Heroes, relive iconic scenes, and dive deep into the Marvel universe. From Iron Man’s first flight to the Avengers' epic team-ups, this is the place to celebrate everything that makes the Avengers legendary. Get ready to suit up and join the action!</p>
+  </section>
+
+  <section id="characters">
+    <h2>Characters</h2>
+    <div class="character-grid">
+
+      <div class="character-card" id="ironman">
+        <img src="Images/avengers_02.jpg" alt="Iron Man" />
+        <h3>Tony Stark</h3>
+        <p>Is a billionaire genius and inventor who built the Iron Man suit to escape captivity. With his sharp wit, incredible tech, and charm, he quickly became the heart and soul of the Avengers—bringing brains, humor, and a whole lot of sass to the team.</p>    
+      </div>
+
+      <div class="character-card" id="thor">
+        <img src="Images/avengers_01.jpg" alt="Thor" />
+        <h3>Thor</h3>
+        <p>Thor is the God of Thunder and heir to the throne of Asgard. He wields the mighty Mjolnir and commands the power of lightning. Oh, and let’s not forget he’s famous for his legendary hair and even more legendary battles.</p>  
+      </div>
+
+      <div class="character-card" id="hulk">
+        <img src="Images/avengers_03.jpg" alt="Hulk" width="300" />
+        <h3>Hulk</h3>
+        <p>Bruce Banner's alter ego is the Hulk; when he gets angry, he transforms into a massive green powerhouse. And when it comes to showing affection, smashing is his way of saying 'I care.'</p>
+      </div>
+
+      <div class="character-card" id="captainamerica">
+        <img src="Images/avengers_05.jpg" alt="Captain America" />
+        <h3>Captain America</h3>
+        <p>Steve Rogers: the original super soldier. Shield in hand, justice in heart, and a timeless “I can do this all day” energy.</p>
+      </div>
+
+      <div class="character-card" id="blackwidow">
+        <img src="Images/avengers_06.jpg" alt="Black Widow" />
+        <h3>Black Widow</h3>
+        <p>Natasha Romanoff: spy, assassin, Avenger. Deadly with her fists and sharp with her mind. Don’t underestimate the Widow.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="Images/avengers_01.jpg" alt="Avengers Group" />
+      <img src="Images/avengers_02.jpg" alt="Iron Man" />
+      <img src="Images/avengers_06.jpg" alt="Thor Lightning" />
+      <img src="Images/avengers_03.jpg" alt="Hulk Smash" />
+      <img src="Images/avengers_05.jpg" alt="Captain America" />
+    </div>
+
+    <img src="Images/Avengers-Logo-2015.png" alt="Avengers logo" width="300" />
+  </section>
+
+  <!-- Background music, autoplay muted, unmute on click -->
+  <audio autoplay loop muted id="bg-music">
+    <source src="your-avengers-theme.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Unmute music when user clicks anywhere on the page
+    document.body.addEventListener('click', () => {
+      const music = document.getElementById('bg-music');
+      if (music.muted) {
+        music.muted = false;
+        music.volume = 0.2; // low volume for subtle background vibe
+      }
+    }, { once: true });
+  </script>
+
+</body>
+</html>
+
